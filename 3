@@ -1,0 +1,47 @@
+class numVoler(val name: String,  var gender: String,  var size: String, var zvuk: String)
+
+fun main(){
+    val vol1 = numVoler("Лисы, ", "женский и мужской пол, ", "количество: 6, ", "звук: (фр)" )
+    val vol2 = numVoler("Мамонты, ", "женский пол, ", "количество: 2, ", "звук: (ууу)" )
+    val vol3 = numVoler("Львы, ", "мужской пол, ", "количество: 1, ", "звук: (ррр)" )
+    val vol4 = numVoler("Шимпанзе, ", "женский и мужской пол, ", "количество: 7, ", "звук: (уауа)" )
+    val vol5 = numVoler("Павлины, ", "женский пол, ", "количество: 3, ", "звук: (УА)" )
+
+    print("Введите номер вольера от 1 до 5 к которому хотите подойти: ")
+    val n = readLine()!!.toInt()
+    if (n == 1){
+        print("Вольер №1: ")
+        print(vol1.name)
+        print(vol1.size)
+        print(vol1.gender)
+        println(vol1.zvuk)
+    }
+    else if (n == 2) {
+        print("Вольер №2: ")
+        print(vol2.name)
+        print(vol2.size)
+        print(vol2.gender)
+        println(vol2.zvuk)
+    }
+    else if (n == 3) {
+        print("Вольер №3: ")
+        print(vol3.name)
+        print(vol3.size)
+        print(vol3.size)
+        println(vol3.zvuk)
+    }
+    else if (n == 4) {
+        print("Вольер №4: ")
+        print(vol4.name)
+        print(vol4.size)
+        print(vol4.gender)
+        println(vol4.zvuk)
+    }
+    else if (n == 5) {
+        print("Вольер №5: ")
+        print(vol5.name)
+        print(vol5.size)
+        print(vol5.gender)
+        println(vol5.zvuk)
+    }
+}
