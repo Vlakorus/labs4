@@ -1,0 +1,23 @@
+fun main(){
+
+    val tovar1 = prodavec(1, "Сливы" )
+    val tovar2 = prodavec(1, "абрикосы" )
+    val tovar3 = prodavec(1, "нектарины")
+    val tovar4 = prodavec(1, "черешня")
+    val tovar5 = prodavec(1, "вишня")
+    print("Информация о товаре №1: ")
+    tovar1.tov1 = true
+    println()
+    print("Информация о товаре №2: ")
+    tovar2.tov1 = false
+    println()
+    print("Информация о товаре №3: ")
+    tovar3.tov1 = true
+    println()
+    print("Информация о товаре №4: ")
+    tovar4.tov1 = false
+    println()
+    print("Информация о товаре №5: ")
+    tovar5.tov1 = true
+
+}
