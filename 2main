@@ -1,23 +1,145 @@
+class seller(var a: Int, val n: String) {
+
+    var tov1: Boolean = true
+        get() {
+            return a == 1
+        }
+        set(value) {
+            if (value) {
+                print("купить $n ")
+            }
+            else {
+                print("Товар $n продан покупателю")
+            }
+            field = value
+        }
+    var tov2: Boolean = true
+        get() {
+            return a == 1
+        }
+        set(value) {
+            if (value) {
+                print("купить $n ")
+            }
+            else {
+                print("Товар $n продан покупателю")
+            }
+            field = value
+        }
+    var tov3: Boolean = true
+        get() {
+            return a == 1
+        }
+        set(value) {
+            if (value) {
+                print("купить $n ")
+            }
+            else {
+                print("Товар $n продан покупателю")
+            }
+            field = value
+        }
+}
+
+class player (var a: Int, val n: String)
+{
+    var t1: Boolean = true
+        get() {
+            return a == 1
+        }
+        set(value) {
+            if (value) {
+                print("Товар $n куплен \n")
+            }
+            else {
+                print("Товар $n не куплен \n")
+            }
+            field = value
+        }
+    var t2: Boolean = true
+        get() {
+            return a == 1
+        }
+        set(value) {
+            if (value) {
+                print("Товар $n куплен \n")
+            }
+            else {
+                print("Товар $n не куплен \n")
+            }
+            field = value
+        }
+    var t3: Boolean = true
+        get() {
+            return a == 1
+        }
+        set(value) {
+            if (value) {
+                print("Товар $n куплен \n")
+            }
+            else {
+                print("Товар $n не куплен \n")
+            }
+            field = value
+        }
+}
+
+
 fun main(){
 
-    val tovar1 = prodavec(1, "Сливы" )
-    val tovar2 = prodavec(1, "абрикосы" )
-    val tovar3 = prodavec(1, "нектарины")
-    val tovar4 = prodavec(1, "черешня")
-    val tovar5 = prodavec(1, "вишня")
-    print("Информация о товаре №1: ")
+    val tovar1 = seller(1, "Сливы" )
+    val tovar2 = seller(1, "абрикосы" )
+    val tovar3 = seller(1, "нектарины")
+    val tv1 = player(1,"сливы")
+    val tv2 = player(1,"абрикосы")
+    val tv3 = player(1,"нектарины")
+
+    print("1) ")
     tovar1.tov1 = true
     println()
-    print("Информация о товаре №2: ")
-    tovar2.tov1 = false
+    print("2) ")
+    tovar2.tov2 = true
     println()
-    print("Информация о товаре №3: ")
-    tovar3.tov1 = true
+    print("3) ")
+    tovar3.tov3 = true
     println()
-    print("Информация о товаре №4: ")
-    tovar4.tov1 = false
-    println()
-    print("Информация о товаре №5: ")
-    tovar5.tov1 = true
-
+    println("4) товары в наличии  ")
+    println("5) выход \n")
+    val a = 0
+    var s = 0
+    var g = 0
+    var t = 0
+    while (a !=5) {
+        val a = readLine()!!.toInt()
+        when(a){
+            in 1..1 ->{
+                tovar1.tov1 =false
+                 s =1
+                println()
+            }
+            in 2..2 -> {
+                tovar2.tov2 = false
+                g = 1
+                println()
+            }
+            in 3..3 -> {
+                tovar3.tov3 = false
+                t = 1
+                println()
+            }
+            in 4..4 ->{
+                if (s == 1)
+                tv1.t1 = true
+                else tv1.t1 = false
+                if (g == 1)
+                    tv2.t2 = true
+                else tv2.t2 = false
+                if (t == 1)
+                    tv3.t3 = true
+                else tv3.t3 = false
+                println()
+            }
+            in 5..5 -> break
+        }
+    }
 }
